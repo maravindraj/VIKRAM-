@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKRAM - Wildfire Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .upload-box {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: #444;
+            color: #fff;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ff5722;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e64a19;
+        }
+        .tribute {
+            margin-top: 50px;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .tribute h2 {
+            color: #ffcc00;
+            font-size: 1.8rem;
+        }
+        .tribute p {
+            font-size: 1rem;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>VIKRAM - AI Wildfire Detection</h1>
+    <div class="container">
+        <div class="upload-box">
+            <h2>Upload an Image</h2>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <br>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tribute">
+        <h2>Tribute to Captain Vikram Batra</h2>
+        <p>
+            Captain Vikram Batra was a brave Indian Army officer who made the ultimate sacrifice during the **Kargil War of 1999**.  
+            His famous words **"Yeh Dil Maange More!"** became a symbol of courage and determination.  
+            Posthumously awarded the **Param Vir Chakra**, India's highest military honor, he remains an inspiration for generations.  
+        </p>
+    </div>
+</body>
+</html>
